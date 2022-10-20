@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "netherstarevo",
+  "version": "${version}",
+  "name": "Nether Star Evolution",
+  "description": "Mod Description",
+  "authors": [
+    "SGDaGangsta"
+  ],
+  "contact": {
+    "homepage": "https://example.com/",
+    "issues": "https://example.com/",
+    "sources": "https://example.com/"
+  },
+  "license": "GPLv3",
+  "icon": "assets/NetherStarEvolution/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "net.sgdagangsta.netherstarevo.NetherStarEvolution"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "net.sgdagangsta.netherstarevo.NetherStarEvolutionClient"
+      }
+    ]
+  },
+  "mixins": [
+    "netherstarevo.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.8.5+kotlin.1.7.20",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
