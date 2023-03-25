@@ -1,36 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "netherstarevo",
+  "id": "netherstarevolution",
   "version": "${version}",
   "name": "Nether Star Evolution",
-  "description": "Mod Description",
+  "description": "A Fabric mod that adds more uses for nether stars by adding a new tier of equipment to the game.",
   "authors": [
     "SGDaGangsta"
   ],
   "contact": {
     "homepage": "https://example.com/",
-    "issues": "https://example.com/",
-    "sources": "https://example.com/"
+    "issues": "https://github.com/SGDaGangsta/nether-star-evolution/issues",
+    "sources": "https://github.com/SGDaGangsta/nether-star-evolution"
   },
   "license": "GPLv3",
-  "icon": "assets/NetherStarEvolution/icon.png",
+  "icon": "assets/netherstarevolution/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "net.sgdagangsta.netherstarevo.NetherStarEvolution"
+        "value": "net.sgdagangsta.netherstarevolution.NetherStarEvolution"
       }
     ],
     "client": [
       {
         "adapter": "kotlin",
-        "value": "net.sgdagangsta.netherstarevo.NetherStarEvolutionClient"
+        "value": "net.sgdagangsta.netherstarevolution.NetherStarEvolutionClient"
       }
     ]
   },
   "mixins": [
-    "netherstarevo.mixins.json"
+    "netherstarevolution.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.9",
